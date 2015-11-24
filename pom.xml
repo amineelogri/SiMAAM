@@ -9,14 +9,14 @@
     <name>SQLI</name>
     
     	<properties>
-		<struts2.version>2.3.16</struts2.version>
+		<struts2.version>2.3.1.2</struts2.version>
+		<spring-framework.version>3.0.1.RELEASE</spring-framework.version>
 		<hibernate.version>5.0.3.Final</hibernate.version>
-		<spring-framework.version>4.2.1.RELEASE</spring-framework.version>
 		<log4j2.version>2.2</log4j2.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<dependencies>
+		<dependencies>
 
 		<dependency>
 			<groupId>org.apache.struts</groupId>
@@ -72,11 +72,11 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 
-		<!--  
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-spring-plugin</artifactId>
-			<version>${struts2.version}</version>
+			<version>2.3.15</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework</groupId>
@@ -102,19 +102,18 @@
 
 		</dependency>
 
--->
-<dependency>
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
 
 		<dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-	<version>5.1.36</version>
-</dependency>
-		
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.36</version>
+		</dependency>
+
 
 
 		<dependency>
