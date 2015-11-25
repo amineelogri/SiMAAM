@@ -8,7 +8,7 @@
     <packaging>war</packaging>
     <name>SQLI</name>
     
-    	<properties>
+    <properties>
 		<struts2.version>2.3.1.2</struts2.version>
 		<spring-framework.version>3.0.1.RELEASE</spring-framework.version>
 		<hibernate.version>5.0.3.Final</hibernate.version>
