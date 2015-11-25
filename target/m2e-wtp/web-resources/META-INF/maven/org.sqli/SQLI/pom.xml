@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.sqli</groupId>
-    <artifactId>SQLI</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>SQLI</name>
-    
-    	<properties>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.sqli</groupId>
+	<artifactId>SQLI</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>SQLI</name>
+
+	<properties>
 		<struts2.version>2.3.1.2</struts2.version>
 		<spring-framework.version>3.0.1.RELEASE</spring-framework.version>
 		<hibernate.version>5.0.3.Final</hibernate.version>
@@ -16,11 +16,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-		<dependencies>
+	<dependencies>
 
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
+			<version>${struts2.version}</version>
+		</dependency>
+
+		<!-- Struts 2 JSON Plugins -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-json-plugin</artifactId>
 			<version>${struts2.version}</version>
 		</dependency>
 
@@ -184,4 +191,4 @@
 		</plugins>
 	</build>
 
-    </project>
+</project>

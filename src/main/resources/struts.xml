@@ -4,14 +4,15 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
    
-     <package name="default" namespace="/" extends="struts-default">
+     <package name="default" namespace="/" extends="json-default">
 
         <default-action-ref name="index"></default-action-ref>
 
-        <action name="index">
-          <result>views/index.jsp</result>    
+        <action name="index" class="org.sqli.web.JSONDataAction">
+          <result name="success" type="json">views/index.jsp</result>   
+          <result name="not">views/index.jsp</result> 
         </action>
-
+<!-- qlq chose  -->
     </package>
 
     <!-- Add addition packages and configuration here. -->

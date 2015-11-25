@@ -1,0 +1,172 @@
+.promotion
+{color: red;
+}
+.promotion2
+{color: red;
+font-size:x-large;
+}
+.prix
+{
+text-decoration: line-through;
+}
+.prix2
+{
+text-decoration: line-through;
+color:rgb(0,0,0);
+font-size:x-large;
+}
+.limoni
+{
+background-color: rgb(230,230,230);
+font-family:Veradana;
+color:rgb(0,0,0);
+font-size: 40px;
+box-shadow: 3px 3px 3px 3px rgb(163,163,163);;
+border-radius: 4px 4px 4px 4px;
+}
+.limonii
+{
+background-image: url("for.jpg");
+font-family:Veradana;
+color:rgb(255,255,255);
+font-size: 40px;
+box-shadow: 3px 3px 3px 3px rgb(163,163,163);;
+border-radius: 4px 4px 4px 4px;
+}
+.rosi
+{
+background-color: rgb(230,230,230);
+font-family:Veradana;
+color:rgb(0,0,0);
+font-size: 40px;
+box-shadow: 3px 3px 3px 3px rgb(163,163,163);;
+border-radius: 3px 3px 3px 3px;
+}
+.ima
+{
+background-image: url("contente.png");
+box-shadow: 6px 6px 6px black;
+}
+.acceuil
+{
+box-shadow: 10px 5px 10px 10px rgb(75,75,75);
+border-radius: 10px 5px 10px 5px;
+}
+
+.im_vent 
+{
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px 5px 10px 5px;
+}
+.im_vente
+{
+box-shadow: 1px 1px 1px 1px rgb(60,60,255);
+border-radius: 1px 1px 1px 1px;
+}
+.for
+{
+box-shadow: 1px 1px 1px 1px rgb(150,150,150);
+border-radius: 1px 1px 1px 1px;
+}
+.im_vente_blue
+{
+box-shadow: 2px 2px 2px 2px rgb(119,255,255);
+border-radius: 10px 5px 10px 5px;
+}
+.im_vente_mauve
+{
+box-shadow: 2px 2px 2px 2px rgb(251,81,168);
+border-radius: 10px 5px 10px 5px;
+}
+.im_vente_gris
+{
+box-shadow: 2px 2px 2px 2px rgb(75,75,75);
+border-radius: 10px 5px 10px 5px;
+}
+.im_vente_vert
+{
+box-shadow: 2px 2px 2px 2px rgb(198,255,198);
+border-radius: 10px 5px 10px 5px;
+}
+.pc
+{
+box-shadow: 2px 2px 2px 2px rgb(128,128,128);
+border-radius: 10px 10px 10px 10px;
+margin-bottom:10px;
+}
+.tit
+{
+ font-size: 60px;
+}
+.blan
+{
+color:rgb(255,255,255);
+}
+
+.separateur
+{
+margin-bottom: 0px;
+margin-top: 11px;
+padding-bottom: 0px;
+padding-top: 0px;
+}
+.im_ved
+{
+margin-top: 3px;
+}
+.maro
+{
+background-color: rgb(212,212,212);
+color:rgb(255,255,255);
+font-size: 40px;
+box-shadow: 3px 3px 3px 3px rgb(163,163,163);;
+border-radius: 4px 4px 4px 4px;
+}
+.pri
+{
+font-size: x-large;
+text-decoration: line-through;
+color:red;
+}
+.nv_prix
+{
+font-size: x-large;
+
+}
+.izaha
+{
+margin-right:20px;
+font-weight:bold;
+}
+.izaha2
+{
+font-size:25px;
+font-weight:bold;
+}
+.bloc
+{
+margin-left:160px;
+margin-top:190px;
+}
+.iza
+{
+margin-left:300px;
+}
+.rouge
+{color:red;
+}
+function verifier()
+{
+			if (!/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/.test(document.getElementById("email").value))
+			
+alert("Entrez votre adresse de messagerie au format suivant : xyz@exemple.com. ");
+else{ if (document.getElementById("password").value.length<6)
+	           {alert("Votre mot de passe doit contenir au moins 6 caractéres");}
+	               
+	else{   if (document.getElementById("password").value!=document.getElementById("conpassword").value)
+	                         {alert("La confirmation de mot de passe est incorrect");}
+	           else{ document.getElementById("bout").type="submit";}  
+	    }
+
+
+}
