@@ -10,7 +10,7 @@
 
         <action name="index" class="org.sqli.web.JSONDataAction">
           <result name="success" type="json">views/index.jsp</result>   
-          <result name="not">views/index.jsp</result> 
+          
         </action>
 <!-- qlq chose  -->
     </package>

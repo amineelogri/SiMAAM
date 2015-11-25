@@ -16,7 +16,7 @@ public class JSONDataAction extends ActionSupport{
 	private int[] numberarray1 = {1,2,3,4,5,6,7,8,9};
 	private List<String> lists = new ArrayList<String>();
 	private Map<String, String> maps = new HashMap<String, String>();
-	int i=1;
+	
 	
 	//no getter method, will not include in the JSON
 	private String string2 = "B";
@@ -36,8 +36,8 @@ public class JSONDataAction extends ActionSupport{
 	}
 
 	public String execute() {
-		if(i==1) return SUCCESS;
-		else return "not";
+		 return SUCCESS;
+		
         }
 	
 	public String getString1() {
@@ -87,12 +87,6 @@ public class JSONDataAction extends ActionSupport{
 	public void setMaps(Map<String, String> maps) {
 		this.maps = maps;
 	}
-	public int getI(){
-		return i;
-	}
 	
-	public void setI(int i){
-		this.i=i;
-	}
 	
 }
