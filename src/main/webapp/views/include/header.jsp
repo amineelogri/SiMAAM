@@ -7,7 +7,8 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>DASHGUM FREE</b></a>
+         <a  class="logo" href="<s:url action="json"/>">
+            <b>Cliquer ici pour tester le json</b></a> <!-- majdaaaaaaaaa -->
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
