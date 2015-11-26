@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +15,7 @@
 <%@ include file="include/css.jsp" %>
 </head>
 <body>
+
 <section id="container" >
 <%@ include file="include/header.jsp" %>
 <%@ include file="include/sidebar.jsp" %>
@@ -396,5 +398,6 @@
 <%@ include file="include/footer.jsp" %>
 </section>
 <%@ include file="include/js.jsp" %>
+
 </body>
 </html>
