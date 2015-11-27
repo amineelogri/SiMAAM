@@ -4,30 +4,25 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
-		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
-  
-<bean id="daoPersonne" class="org.sqli.dao.PersonneDAOImpl" />
-<bean id="daoAdmin" class="org.sqli.dao.AdminDAOImpl" />
-<bean id="daoEncadrant" class="org.sqli.dao.EncadrantDAOImpl" />
-<bean id="daoManager" class="org.sqli.dao.ManagerDAOImpl" />
-<!-- 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+<!-- <bean id="daoPersonne" class="org.sqli.dao.PersonneDAOImpl" /> -->
+<!-- <bean id="daoAdmin" class="org.sqli.dao.AdminDAOImpl" /> -->
+<!-- <bean id="daoEncadrant" class="org.sqli.dao.EncadrantDAOImpl" /> -->
+<!-- <bean id="daoManager" class="org.sqli.dao.ManagerDAOImpl" /> -->
+
 <bean id="daoCollaborateur" class="org.sqli.dao.CollaborateurDAOImpl" />
 
-
- -->
- 
 	<bean id="service" class="org.sqli.service.ToutServiceImpl">
-	<property name="daoPersonne" ref="daoPersonne"></property>
-	<property name="daoAdmin" ref="daoAdmin" />
-	<property name="daoEncadrant" ref="daoEncadrant" />
-	<property name="daoManager" ref="daoManager" />
-	<!--  
+<!-- 	<property name="daoPersonne" ref="daoPersonne"></property> -->
+<!-- 	<property name="daoAdmin" ref="daoAdmin" /> -->
+<!-- 	<property name="daoEncadrant" ref="daoEncadrant" /> -->
+<!-- 	<property name="daoManager" ref="daoManager" /> -->
+	  
 	<property name="daoCollaborateur" ref="daoCollaborateur" />
-	
-	
-	-->
 	</bean>
+
 
 
 	<bean id="dataSource"
@@ -59,6 +54,8 @@
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
+<tx:annotation-driven/>
+<context:annotation-config></context:annotation-config>
 
 
 </beans>

@@ -4,21 +4,21 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
    
+     
+   
      <package name="default" namespace="/" extends="struts-default, json-default"> 
     <!-- json-default: pour les pages utlisant json -->
     
     
         <default-action-ref name="index"></default-action-ref>
          <action name="index" >
-          <result>views/index.jsp</result>    
+          <result>views/Authentification.jsp</result>    
         </action>
-        
-        <!-- ci-dessous l'action qui va executer après le clique sur Cliquer ici pour tester le json -->
-        <action name="json" class="org.sqli.web.JSONDataAction">
-        <result name="success" type="json">views/testJson</result>
-        </action>
-        
+                
     </package>
+   
+   <!-- manager.xml contient le fichier de configuration de tt les actions du manager -->
+<!-- <include file="manager.xml"></include> -->
     
    
 

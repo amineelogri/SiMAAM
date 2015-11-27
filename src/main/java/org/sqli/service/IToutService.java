@@ -1,5 +1,8 @@
 package org.sqli.service;
 
+import java.util.List;
+
+import org.sqli.entities.Collaborateur;
 import org.sqli.entities.Personne;
 
 public interface IToutService {
@@ -20,5 +23,9 @@ public interface IToutService {
 	public void addProjet();
 	public void addQualification();
 	public void addTheme();
+	
+	//****************************Collaborateur************************
+	public List<Collaborateur> listCollaborateurManager(Long idManager);
+	
 	
 }
