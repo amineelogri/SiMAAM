@@ -1,5 +1,7 @@
 package org.sqli.service;
 
+import java.util.List;
+
 import org.springframework.transaction.annotation.Transactional;
 import org.sqli.dao.IActionDAO;
 import org.sqli.dao.IAdminDAO;
@@ -17,6 +19,7 @@ import org.sqli.dao.IPersonneDAO;
 import org.sqli.dao.IProjetDAO;
 import org.sqli.dao.IQualificationDAO;
 import org.sqli.dao.IThemeDAO;
+import org.sqli.entities.Collaborateur;
 import org.sqli.entities.Personne;
 
 @Transactional
@@ -184,6 +187,12 @@ public class ToutServiceImpl implements IToutService{
 
 	public void addTheme() {
 		// TODO Auto-generated method stub
+		
+	}
+
+	public List<Collaborateur> listCollaborateurManager(Long idManager) {
+		
+		return daoCollaborateur.listCollaborateurManager(idManager);
 		
 	}
 	
