@@ -17,7 +17,7 @@
     </package>
    
    <!-- manager.xml contient le fichier de configuration de tt les actions du manager -->
-<!-- <include file="manager.xml"></include> -->
+     <include file="manager.xml"></include>
     
    
 
