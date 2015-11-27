@@ -1,13 +1,15 @@
 package org.sqli.service;
 
+import java.util.List;
+
 import org.sqli.entities.Collaborateur;
 import org.sqli.entities.Personne;
 
 public interface IToutService {
 	
-	public void addCollaborateur();
-	public Collaborateur getCollaborateur(Long idPersonne);
-	public void deteteCollaborateur(Long idPersonne);
-	public void updateCollaborateur(Collaborateur col);
+
+	//****************************Collaborateur************************
+	public List<Collaborateur> listCollaborateurManager(Long idManager);
+	
 	
 }

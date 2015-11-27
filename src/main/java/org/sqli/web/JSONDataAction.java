@@ -36,7 +36,6 @@ public class JSONDataAction extends ActionSupport{
 	}
 
 	public String execute() {
-		 System.out.println("*************************************");
 		 return SUCCESS;
 		
 		

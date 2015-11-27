@@ -8,14 +8,12 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
 <bean id="daoCollaborateur" class="org.sqli.dao.CollaborateurDAOImpl" /> 
 <bean id="serviceCollaborateur" class="org.sqli.service.ToutServiceImpl"> 
-	<property name="dao" ref="daoCollaborateur"></property>
+	<property name="daoCollaborateur" ref="daoCollaborateur"></property>
 </bean> 
 <bean id="daoPersonne" class="org.sqli.dao.PersonneDAOImpl" />
 <bean id="daoAdmin" class="org.sqli.dao.AdminDAOImpl" />
 <bean id="daoEncadrant" class="org.sqli.dao.EncadrantDAOImpl" />
 <bean id="daoManager" class="org.sqli.dao.ManagerDAOImpl" />
-
-
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -46,6 +44,8 @@
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
+<tx:annotation-driven/>
+<context:annotation-config></context:annotation-config>
 
 
 </beans>
