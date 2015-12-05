@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<package name="collaborateur" namespace="/collaborateur" extends="struts-default, json-default">
+
+	<action name="ConsulterFB" class="org.sqli.web.FeedbackAction">
+		<result name="success" type="json"></result>
+	</action>
+	<action name="listCollaborateur" class="org.sqli.web.ListerCollaborateurFeedBack">
+			<result name="SUCCESS">indexCollaborateur.jsp</result>
+	</action>
+</package>
+</struts>
