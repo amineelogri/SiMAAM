@@ -7,17 +7,17 @@
      
    
      <package name="default" namespace="/" extends="struts-default, json-default"> 
-     <!-- json-default: pour les pages utlisant json -->
-    
-        <default-action-ref name="index"></default-action-ref>
+         <default-action-ref name="index"></default-action-ref>
          <action name="index" >
-          <result>views/Authentification.jsp</result>    
-        </action>
-                
-    </package>
-   
-   <!-- manager.xml contient le fichier de configuration de tt les actions du manager -->
-     <include file="manager.xml"></include>
+          <result>collaborateur/indexCollaborateur.jsp</result>  
+         </action>
+     </package>             
+     <package name="collaborateur" namespace="/collaborateur" extends="struts-default, json-default">
+			<action name="ConsulterFB" class="org.sqli.web.FeedbackAction" method="execute">
+			<result name="success" type="json">indexCollaborateur.jsp</result>
+			</action>
+     </package>
+	     
     
    
 

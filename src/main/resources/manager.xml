@@ -6,7 +6,7 @@
 <package name="manager" namespace="/manager" extends="struts-default, json-default">
 
 <action name="indexManager" class="org.sqli.web.indexManagerAction">
-<result name="success" type="json">index.jsp</result>
+<result name="success" type="json">indexManager.jsp</result>
 </action>
 
 <!-- ci-dessous l'action qui va executer après le clique sur Cliquer ici pour tester le json -->

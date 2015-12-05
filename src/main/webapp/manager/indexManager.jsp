@@ -17,7 +17,7 @@
 <body>
 
 <section id="container" >
-<%@ include file="/views/include/header.jsp" %>
+<%@ include file="headerManager.jsp" %>
 <%@ include file="sidebarManager.jsp" %>
 
     <!-- **********************************************************************************************************************************************************
