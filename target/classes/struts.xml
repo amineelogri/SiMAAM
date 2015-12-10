@@ -7,8 +7,7 @@
      
    
      <package name="default" namespace="/" extends="struts-default, json-default"> 
-    <!-- json-default: pour les pages utlisant json -->
-    
+     <!-- json-default: pour les pages utlisant json -->
     
         <default-action-ref name="index"></default-action-ref>
          <action name="index" >
@@ -24,7 +23,9 @@
     </package>
    
    <!-- manager.xml contient le fichier de configuration de tt les actions du manager -->
+
 <include file="manager.xml"></include> 
+
     
    
 

@@ -10,37 +10,22 @@
               	  <p class="centered"><a href="profile.html"><img src="<%= request.getContextPath() %>/views/template/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
               	  <h5 class="centered">Marcel Newman</h5>
               	  	
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
-                          <span id="Matricule">Historique</span>
+                  <li class="mt">
+                      <a class="active" href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
                       </a>
-                      <ul  class="sub">
-                      <li>
-                      <form action="gestionHistorique" method="post">
-                     </br> 
-                   <label class="Blanc">liste matricule</label>
-                   </br>
-                     <select name="ListIdMatricule" id="ListIdMatricule" class="ListIdMatricule">
-                   </select>
-              	     </br>
-              	     <button type="submit"> GO</button>
-                 
-                  </form>
-                      </li>
-                           
-                      </ul>
                   </li>
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
+                          <span>Consultation</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
-                          <li><a  href="buttons.html">Buttons</a></li>
-                          <li><a  href="panels.html">Panels</a></li>
+                          <li><a  href="<s:url action="ConsulterFB"/>">FeedBack</a></li>
+                          <li><a  href="<s:url action="ConsulterOb"/>">Objectifs</a></li>
+
                       </ul>
                   </li>
 

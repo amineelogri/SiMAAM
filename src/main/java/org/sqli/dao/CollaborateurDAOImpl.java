@@ -8,7 +8,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+
 import org.sqli.entities.Bap;
+
 import org.sqli.entities.Collaborateur;
 import org.sqli.entities.Description;
 import org.sqli.entities.DetailFeedBack;
