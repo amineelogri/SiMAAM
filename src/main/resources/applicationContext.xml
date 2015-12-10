@@ -7,18 +7,11 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-<!-- <bean id="daoPersonne" class="org.sqli.dao.PersonneDAOImpl" /> -->
-<!-- <bean id="daoAdmin" class="org.sqli.dao.AdminDAOImpl" /> -->
-<!-- <bean id="daoEncadrant" class="org.sqli.dao.EncadrantDAOImpl" /> -->
-<!-- <bean id="daoManager" class="org.sqli.dao.ManagerDAOImpl" /> -->
+
 
 <bean id="daoCollaborateur" class="org.sqli.dao.CollaborateurDAOImpl" />
 
-	<bean id="service" class="org.sqli.service.ToutServiceImpl">
-<!-- 	<property name="daoPersonne" ref="daoPersonne"></property> -->
-<!-- 	<property name="daoAdmin" ref="daoAdmin" /> -->
-<!-- 	<property name="daoEncadrant" ref="daoEncadrant" /> -->
-<!-- 	<property name="daoManager" ref="daoManager" /> -->
+	<bean id="service" class="org.sqli.service.ServiceManagerImpl">
 	  
 	<property name="daoCollaborateur" ref="daoCollaborateur" />
 	</bean>

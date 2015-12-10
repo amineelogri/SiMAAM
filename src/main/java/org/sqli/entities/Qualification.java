@@ -15,17 +15,17 @@ public class Qualification {
   
    private String valeurQualification;
 
-   private int poind;
+   private int poid;
 
 public Qualification() {
 	super();
 	// TODO Auto-generated constructor stub
 }
 
-public Qualification(String valeurQualification, int poind) {
+public Qualification(String valeurQualification, int poid) {
 	super();
 	this.valeurQualification = valeurQualification;
-	this.poind = poind;
+	this.poid = poid;
 }
 
 public Long getIdQualification() {
@@ -44,12 +44,12 @@ public void setValeurQualification(String valeurQualification) {
 	this.valeurQualification = valeurQualification;
 }
 
-public int getPoind() {
-	return poind;
+public int getPoid() {
+	return poid;
 }
 
-public void setPoind(int poind) {
-	this.poind = poind;
+public void setPoid(int poid) {
+	this.poid = poid;
 }
 
 

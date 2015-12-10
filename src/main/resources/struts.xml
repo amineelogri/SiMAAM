@@ -14,11 +14,17 @@
          <action name="index" >
           <result>views/Authentification.jsp</result>    
         </action>
-                
+        
+         <action name="consulterHistorique" class="org.sqli.web.consulterHistoriqueAction">
+ <result type="json">
+ <param name="root">test</param>
+ </result>
+ </action>
+               
     </package>
    
    <!-- manager.xml contient le fichier de configuration de tt les actions du manager -->
-<!-- <include file="manager.xml"></include> -->
+<include file="manager.xml"></include> 
     
    
 

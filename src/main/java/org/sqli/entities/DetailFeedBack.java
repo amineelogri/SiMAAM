@@ -27,6 +27,13 @@ public class DetailFeedBack {
   @ManyToOne
   @JoinColumn(name="idQualification")
    private Qualification qualification;
+  
+  
+
+public DetailFeedBack() {
+	super();
+	// TODO Auto-generated constructor stub
+}
 
 public DetailFeedBack(Feedback feedback, Theme theme, Qualification qualification) {
 	super();

@@ -43,6 +43,12 @@ public Personne(String nom, String prenom, String login, String password, String
 	this.email = email;
 	this.poste = poste;
 }
+public Personne(String nom,String prenom,String poste){
+	super();
+	this.nom=nom;
+	this.prenom=prenom;
+	this.poste=poste;
+}
 
 public Long getIdPersonne() {
 	return idPersonne;

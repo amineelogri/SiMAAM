@@ -131,6 +131,11 @@ public void setHistoriqueFeed(boolean historiqueFeed) {
 	this.historiqueFeed = historiqueFeed;
 }
 
+public Feedback() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
 public Bap getBap() {
 	return bap;
 }

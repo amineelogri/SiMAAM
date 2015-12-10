@@ -24,8 +24,7 @@ public interface IToutService {
 	public void addQualification();
 	public void addTheme();
 	
-	//****************************Collaborateur************************
-	public List<Collaborateur> listCollaborateurManager(Long idManager);
+	
 	
 	
 }

@@ -190,11 +190,7 @@ public class ToutServiceImpl implements IToutService{
 		
 	}
 
-	public List<Collaborateur> listCollaborateurManager(Long idManager) {
-		
-		return daoCollaborateur.listCollaborateurManager(idManager);
-		
-	}
+	
 	
 	
 

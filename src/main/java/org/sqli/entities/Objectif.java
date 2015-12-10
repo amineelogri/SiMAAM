@@ -20,7 +20,7 @@ public class Objectif {
  
    private String titre;
 
-   private String description;
+
  
    private String mesure;
   
@@ -40,7 +40,7 @@ public class Objectif {
  
    private boolean historiqueObjectif;
 
-   private String responsableMesure;
+   
    
   @ManyToOne
   @JoinColumn(name="idBapObjectif")
@@ -55,12 +55,12 @@ public Objectif() {
 	// TODO Auto-generated constructor stub
 }
 
-public Objectif(String titre, String description, String mesure, String poid, long noteFinale, String resultat,
+public Objectif(String titre, String mesure, String poid, long noteFinale, String resultat,
 		boolean rejetResultat, boolean acces, String etat, int nombreRejet, boolean historiqueObjectif,
-		String responsableMesure, Bap bap, Collaborateur collaborateur) {
+		 Bap bap, Collaborateur collaborateur) {
 	super();
 	this.titre = titre;
-	this.description = description;
+	
 	this.mesure = mesure;
 	this.poid = poid;
 	this.noteFinale = noteFinale;
@@ -70,7 +70,7 @@ public Objectif(String titre, String description, String mesure, String poid, lo
 	this.etat = etat;
 	this.nombreRejet = nombreRejet;
 	this.historiqueObjectif = historiqueObjectif;
-	this.responsableMesure = responsableMesure;
+
 	this.bap = bap;
 	this.collaborateur = collaborateur;
 }
@@ -91,13 +91,7 @@ public void setTitre(String titre) {
 	this.titre = titre;
 }
 
-public String getDescription() {
-	return description;
-}
 
-public void setDescription(String description) {
-	this.description = description;
-}
 
 public String getMesure() {
 	return mesure;
@@ -171,13 +165,7 @@ public void setHistoriqueObjectif(boolean historiqueObjectif) {
 	this.historiqueObjectif = historiqueObjectif;
 }
 
-public String getResponsableMesure() {
-	return responsableMesure;
-}
 
-public void setResponsableMesure(String responsableMesure) {
-	this.responsableMesure = responsableMesure;
-}
 
 public Bap getBap() {
 	return bap;

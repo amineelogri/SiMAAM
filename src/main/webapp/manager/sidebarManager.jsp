@@ -10,11 +10,26 @@
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
               	  <h5 class="centered">Marcel Newman</h5>
               	  	
-                  <li class="mt">
-                      <a class="active" href="index.html">
-                          <i class="fa fa-dashboard"></i>
-                          <span>Historique</span>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span id="Matricule">Historique</span>
                       </a>
+                      <ul  class="sub">
+                      <li>
+                      <form action="gestionHistorique" method="post">
+                     </br> 
+                   <label class="Blanc">liste matricule</label>
+                   </br>
+                     <select name="ListIdMatricule" id="ListIdMatricule" class="ListIdMatricule">
+                   </select>
+              	     </br>
+              	     <button type="submit"> GO</button>
+                 
+                  </form>
+                      </li>
+                           
+                      </ul>
                   </li>
 
                   <li class="sub-menu">
