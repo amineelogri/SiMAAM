@@ -20,9 +20,10 @@ public class Collaborateur extends Personne {
   
    private String matricule;
 
-   private Boolean accesHistoriqueObjectif;
+   private boolean accesHistoriqueObjectif;
   
    private boolean accesHistoriqueFeedBack;
+  
    
    @ManyToOne
    @JoinColumn(name="idManagerRH")
@@ -40,7 +41,7 @@ public Collaborateur() {
 
 
 
-public Collaborateur(Date dateDebutEmbauche, Date dateFinEmbauche, String matricule, Boolean accesHistoriqueObjectif,
+public Collaborateur(Date dateDebutEmbauche, Date dateFinEmbauche, String matricule, boolean accesHistoriqueObjectif,
 		boolean accesHistoriqueFeedBack, ManagerRH managerRH) {
 	super();
 	this.dateDebutEmbauche = dateDebutEmbauche;
@@ -49,6 +50,7 @@ public Collaborateur(Date dateDebutEmbauche, Date dateFinEmbauche, String matric
 	this.accesHistoriqueObjectif = accesHistoriqueObjectif;
 	this.accesHistoriqueFeedBack = accesHistoriqueFeedBack;
 	this.managerRH = managerRH;
+
 }
 
 
@@ -86,12 +88,12 @@ public void setMatricule(String matricule) {
 }
 
 
-public Boolean getAccesHistoriqueObjectif() {
+public boolean getAccesHistoriqueObjectif() {
 	return accesHistoriqueObjectif;
 }
 
 
-public void setAccesHistoriqueObjectif(Boolean accesHistoriqueObjectif) {
+public void setAccesHistoriqueObjectif(boolean accesHistoriqueObjectif) {
 	this.accesHistoriqueObjectif = accesHistoriqueObjectif;
 }
 
@@ -114,6 +116,20 @@ public ManagerRH getManagerRH() {
 public void setManagerRH(ManagerRH managerRH) {
 	this.managerRH = managerRH;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
    
    

@@ -8,8 +8,10 @@ import org.sqli.entities.Personne;
 public interface IToutService {
 	
 
+
 	//****************************Collaborateur************************
 	public List<Collaborateur> listCollaborateurManager(Long idManager);
+
 	
 	
 }

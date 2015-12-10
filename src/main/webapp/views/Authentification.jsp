@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="manager/indexManager.action" method="post">
+<form action="manager/authentification.action" method="post">
 <button type="submit">allez au manager</button>
 
 </form>

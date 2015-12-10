@@ -3,16 +3,42 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-<package name="manager" namespace="/manager" extends="struts-default, json-default">
+ <package name="manager" namespace="/manager" extends="struts-default, json-default">
+ <action name="authentification" class="org.sqli.web.authentificationAction">
+<result name="success">index.jsp</result>
+ </action>
+ 
+ <action name="indexManager" class="org.sqli.web.indexManagerAction">
+ <result type="json">
+ <param name="root">listMatricule</param>
+ </result>
+ </action>
+ 
+ <action name="gestionHistorique" class="org.sqli.web.gestionHistoriqueAction">
+ <result name="success">gestionHistorique.jsp</result>
+ </action>
+ <action name="modeObjectif" class="org.sqli.web.modeObjectifAction">
+ <result type="json">
+ <param name="root">Matricule</param>
+ </result>
+ </action>
+ 
+ <action name="consulterHistorique" class="org.sqli.web.consulterHistoriqueAction">
+ <result type="json">
+ <param name="root">test</param>
+ </result>
+ </action>
+<action name="Historique" class="org.sqli.web.HistoriqueAction">
 
-<action name="indexManager" class="org.sqli.web.indexManagerAction">
-<result name="success" type="json">index.jsp</result>
+<result name="success">consulterHistorique.jsp</result>
 </action>
 
-<!-- ci-dessous l'action qui va executer après le clique sur Cliquer ici pour tester le json -->
-        <action name="json" class="org.sqli.web.JSONDataAction">
-        <result name="success" type="json">testJson</result>
-        </action>
+<action name="afficherHistorique" class="org.sqli.web.afficherHistoriqueAction">
+<result type="json">
+</result>
 
-</package>
+
+</action>
+ 
+</package>  
 </struts>

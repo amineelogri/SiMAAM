@@ -14,14 +14,16 @@ public class Theme {
    private Long idTheme;
   
    private String remarque1000;
+   private String nomTheme;
    public Theme() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-public Theme(String remarque1000) {
+public Theme(String remarque1000,String nomTheme) {
 	super();
 	this.remarque1000 = remarque1000;
+	this.nomTheme=nomTheme;
 }
 
 public Long getIdTheme() {
@@ -39,6 +41,15 @@ public String getRemarque1000() {
 public void setRemarque1000(String remarque1000) {
 	this.remarque1000 = remarque1000;
 }
+
+public String getNomTheme() {
+	return nomTheme;
+}
+
+public void setNomTheme(String nomTheme) {
+	this.nomTheme = nomTheme;
+}
+
 
 
    

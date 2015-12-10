@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <script src="../jquery.js"></script>
+    <script src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="../views/template/css/amine.css">
     <title>Mon Template</title>
  
@@ -31,7 +31,9 @@
 
               <div class="row">
                   <div class="col-lg-9 main-chart">
-                  <button id="Matriculellllll">clique ici</button>
+              
+               <div id="hamza"></div>
+                
                  
       
           
@@ -55,6 +57,6 @@
 </section>
 <%@ include file="/views/include/js.jsp" %>
 
-<script src="manager.js"></script>
+<script src="historique.js"></script>
 </body>
 </html>
